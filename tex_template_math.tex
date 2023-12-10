@@ -1,0 +1,105 @@
+%
+% Math Homework Template
+% Mathieu Landretti
+% Last Updated: 2022-03-30
+%
+\documentclass{article}
+\usepackage{fancyhdr} \usepackage[margin=1in]{geometry}
+\usepackage[english]{babel} \usepackage{xcolor}							  
+\usepackage{mathtools,amsmath,amsthm,amssymb} 
+
+% URL Styling
+\usepackage{url,hyperref}							  
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=cyan
+}
+\urlstyle{same}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Add nice borders around proofs and proof cases
+\usepackage[framemethod=TikZ]{mdframed}
+
+\mdfdefinestyle{Proof}{%  Border for proofs
+	linecolor=black,
+	outerlinewidth=1pt,					
+	innertopmargin=\baselineskip,
+	innerbottommargin=\baselineskip,
+	innerrightmargin=10pt,
+	innerleftmargin=10pt
+}
+
+\mdfdefinestyle{Case}{% Border for cases in proofs
+	linecolor=black,
+	outerlinewidth=0.5pt,
+	innertopmargin=\baselineskip,
+	innerbottommargin=\baselineskip,
+	innerrightmargin=5pt,
+	innerleftmargin=5pt
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\headheight=10pt \fancyhf{}
+\lhead{Title} \chead{Name} \rhead{\today{}}
+\thispagestyle{fancy}
+
+% Aliases
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Theorems, Axioms, Definition, Proofs 
+\newtheorem{theorem}{Theorem}
+\theoremstyle{axiom} \newtheorem{axiom}{Axiom}
+\theoremstyle{definition} \newtheorem{definition}{Definition}
+\theoremstyle{example} \newtheorem{example}{Example}
+\renewcommand\qedsymbol{$\blacksquare$}
+
+% Blackboard characters
+\newcommand{\A}{\mathbb{A}}  \newcommand{\B}{\mathbb{B}}  
+\newcommand{\C}{\mathbb{C}}  \newcommand{\D}{\mathbb{D}}
+\newcommand{\E}{\mathbb{E}}  \newcommand{\F}{\mathbb{F}}
+\newcommand{\bG}{\mathbb{G}} \newcommand{\bH}{\mathbb{H}}  
+\newcommand{\I}{\mathbb{I}}  \newcommand{\J}{\mathbb{K}} 
+\newcommand{\K}{\mathbb{K}}  \newcommand{\bL}{\mathbb{L}} 
+\newcommand{\M}{\mathbb{M}}  \newcommand{\N}{\mathbb{N}} 
+\newcommand{\bO}{\mathbb{O}} \newcommand{\bP}{\mathbb{P}}  
+\newcommand{\Q}{\mathbb{Q}}  \newcommand{\R}{\mathbb{R}}  
+\newcommand{\bS}{\mathbb{S}} \newcommand{\T}{\mathbb{T}}  
+\newcommand{\U}{\mathbb{U}}  \newcommand{\V}{\mathbb{V}}  
+\newcommand{\W}{\mathbb{W}}  \newcommand{\X}{\mathbb{X}}  
+\newcommand{\Y}{\mathbb{Y}}  \newcommand{\Z}{\mathbb{Z}}  
+
+% Script characters
+\newcommand{\sA}{\mathcal{A}}  \newcommand{\sB}{\mathcal{B}}  
+\newcommand{\sC}{\mathcal{C}}  \newcommand{\sD}{\mathcal{D}}
+\newcommand{\sE}{\mathcal{E}}  \newcommand{\sF}{\mathcal{F}}
+\newcommand{\sG}{\mathcal{G}}  \newcommand{\sH}{\mathcal{H}}  
+\newcommand{\sI}{\mathcal{I}}  \newcommand{\sJ}{\mathcal{K}} 
+\newcommand{\sK}{\mathcal{K}}  \newcommand{\sL}{\mathcal{L}} 
+\newcommand{\sM}{\mathcal{M}}  \newcommand{\sN}{\mathcal{N}}
+\newcommand{\sO}{\mathcal{O}}  \newcommand{\sP}{\mathcal{P}} 
+\newcommand{\sQ}{\mathcal{Q}}  \newcommand{\sR}{\mathcal{R}} 
+\newcommand{\sS}{\mathcal{S}}  \newcommand{\sT}{\mathcal{T}}  
+\newcommand{\sU}{\mathcal{U}}  \newcommand{\sV}{\mathcal{V}}  
+\newcommand{\sW}{\mathcal{W}}  \newcommand{\sX}{\mathcal{X}}  
+\newcommand{\sY}{\mathcal{Y}}  \newcommand{\sZ}{\mathcal{Z}}  
+
+\begin{document}
+
+\section*{}
+\begin{mdframed}[style=Proof]
+	\begin{proof}
+		\begin{equation*}
+			\A \B \C \D \E \F \bG \bH \I \J  \K \bL \M \N  \bO \bP \Q \R \bS \T
+			\U \V \W \X \Y \Z
+		\end{equation*}
+		\begin{equation*}
+			\sA \sB \sC \sD \sE \sF \sG \sH \sI \sJ  \sK \sL \sM \sN  \sO \sP 
+			\sQ \sR \sS \sT \sU \sV \sW \sX \sY \sZ 
+		\end{equation*}
+	\end{proof}
+\end{mdframed}
+
+\end{document}
